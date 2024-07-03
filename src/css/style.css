@@ -8,7 +8,7 @@
   --bs-grey-6: #999;
   --bs-cape-honey: #ffe9ab;
   --bs-cerulean: #00aced;
-  --bs-cod-grey: #1d1d1d;
+  --bs-code-grey: #1d1d1d;
   --bs-chathams-blue: #0f4f7e;
   --bs-chathams-blue-2: #005999;
   --bs-chathams-blue-3: #87a7be;
@@ -86,10 +86,11 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Global styles */
+
 * {
   box-sizing: border-box;
 }
-
 img {
   max-width: 100%;
 }
@@ -98,6 +99,15 @@ body {
   font-family: var(--bs-body-font-family);
   font-size: 20px;
   margin: 0;
+}
+
+a:link,
+a:visited {
+  color: var(--bs-link-color);
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
 }
 
 /* Skip links styling */
@@ -139,6 +149,21 @@ body {
   border-top: 34px solid var(--bs-light-green);
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
+}
+
+/* Utility styles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 svg {
