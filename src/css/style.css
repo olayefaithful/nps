@@ -97,7 +97,7 @@ img {
 
 body {
   font-family: var(--bs-body-font-family);
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -145,6 +145,7 @@ a:hover {
 .logo {
   height: 0;
   width: 0;
+  margin: 0.5em;
   display: inline-block;
   border-top: 34px solid var(--bs-light-green);
   border-left: 13px solid transparent;
