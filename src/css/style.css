@@ -277,6 +277,10 @@ a:hover {
   overflow: hidden;
 }
 
+.disclaimer {
+  padding: 0 1em;
+}
+
 /* svg {
   background-color: var(--bs-black);
   fill: white;
