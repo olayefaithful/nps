@@ -137,7 +137,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.site-title h1 {
+.site-title > span {
   font-size: 1rem;
   margin-left: 0.3em;
 }
