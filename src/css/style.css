@@ -225,6 +225,65 @@ a:hover {
 .global-nav svg {
   --icon-color: white;
 }
+.global-nav__section-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 0.625rem;
+  font-size: 1.25rem;
+}
+.section-heading--green {
+  color: var(--bs-light-green);
+}
+.section-heading--blue {
+  color: var(--bs-chathams-blue-3);
+}
+
+.global-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #444;
+}
+.global-nav__split-button {
+  display: flex;
+  background-color: var(--bs-gray-800);
+}
+.global-nav__split-button > a {
+  flex: 1;
+  align-self: center;
+  padding: 1rem 0.625rem;
+  display: block;
+}
+.global-nav__split-button > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.25rem;
+  border-left: 1px solid #444;
+}
+.global-nav__split-button > button:hover,
+.global-nav__split-button > a:hover {
+  background-color: var(--bs-gray-900);
+}
+
+.global-nav__submenu {
+  list-style: none;
+  padding: 0;
+  font-size: 0.8em;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s;
+}
+
+.global-nav__submenu a {
+  display: block;
+  padding: 1rem 0.625rem;
+}
+.global-nav__submenu a:hover {
+  text-decoration: underline;
+}
+
+/* Adjust for wide screens */
 
 /* styles to control opening and closing of menus */
 
@@ -237,14 +296,19 @@ a:hover {
   align-items: center;
 }
 
-.global-nav__toggle[aria-expanded="true"] > .global-nav__toggle--closed {
+.global-nav__toggle[aria-expanded="true"] .global-nav__toggle--closed {
   display: none;
 }
-.global-nav__toggle[aria-expanded="true"] > .global-nav__toggle--open {
+.global-nav__toggle[aria-expanded="true"] .global-nav__toggle--open {
   display: flex;
 }
 
-.global-nav.show {
+.global-nav__split-button .icon {
+  transition: all 0.3s;
+}
+
+.global-nav.show,
+.global-nav__submenu.show {
   max-height: 1000px;
 }
 
