@@ -1,3 +1,5 @@
+import "../css/style.css"; // we can do this because we are using Vite...
+import "../css/visitor-center.css";
 import setHeaderFooter from "./setHeaderFooter.mjs";
 import { getParkData, getParkVisitorCenterDetails } from "./parkService.mjs";
 import {
