@@ -24,3 +24,4 @@ function parkInfoTemplate(info) {
 
 const heroText = document.querySelector('.hero-banner__content');
 heroText.innerHTML = parkInfoTemplate(parkData);
+/*trying to push*/

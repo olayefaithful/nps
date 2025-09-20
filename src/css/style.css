@@ -314,7 +314,7 @@ svg {
 }
 
 .hero-banner__icons .icon {
-  width: 28px; /* slightly bigger icons */
+  width: 28px; 
   height: 28px;
   margin-bottom: 0.3rem;
   fill: white;
