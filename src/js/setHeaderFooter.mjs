@@ -13,11 +13,11 @@ export function setHeaderInfo(data){
 
 }
 
-export function setFooter(data){
+  export function setFooter(data){
     document.getElementById("park-footer").innerHTML = footerTemplate(data);
 }
 
-export default function setHeaderFooter(data){
+export  function setHeaderFooter(data){
     setHeaderInfo(data);
     setFooter(data);
 }
