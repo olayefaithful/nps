@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  overflow: hidden;
+  height: 200%;
+}
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: 18px;
+  margin: 0;
+}
+
+a:link,
+a:visited { 
+  color: var(--bs-black);
+}
+
+a:hover, #park-header a:visited {
+  color: var(--bs-white);
+}
