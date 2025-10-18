@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yellowstone Park</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/main.js"></script>
+    <title>Current Conditions</title>
+    <link rel="stylesheet" href="css/conditions.css">
+    <script type="module" src="js/conditions.js"></script>
    
   </head>
   <body>
@@ -120,10 +120,29 @@
 </section>
     </header>
     
-    <main id="main">
-    <section class="intro"></section>
-  <section class="info"></section>
-  </main>
+  <main id="main">
+  <section id="alerts" class="alerts-section">
+    <h2>Alerts</h2>
+    <ul class="alerts-list"></ul>
+  </section>
+
+  <section id="visitor-services" class="visitor-services-section">
+    <h2>Visitor Services</h2>
+     <details name="current-details">
+          <summary>Visitor Centers</summary>
+          <ul></ul>
+        </details>
+  </section>
+
+  <section id="activities" class="activities-section">
+    <h2>Activities</h2>
+    <details name="current-details">
+          <summary>All Activities</summary>
+          <ul></ul>
+        </details>
+  </section>
+</main>
+
     <footer id="park-footer">
 
 </footer>

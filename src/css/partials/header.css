@@ -96,7 +96,11 @@
   flex-direction: column;
   font-size: 0.8rem;
 }
-
+.park-nav{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
 
 .hero-banner__icons {
   position: relative; 
@@ -110,6 +114,7 @@
   margin: 0;
   left: 0;
   align-items: center;
+  
 }
 
 .hero-banner__icons nav {
@@ -133,12 +138,12 @@
   transform: translateY(-3px);
 }
 
-.hero-banner__icons .icon {
+ .park-nav .icon {
   width: 28px; 
   height: 28px;
-  margin-bottom: 0.3rem;
+  /*margin-bottom: 0.3rem;
   fill: white;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s ease;*/
 }
 
 .hero-banner__icons a:hover .icon {
