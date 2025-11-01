@@ -10,6 +10,7 @@ body {
   font-family: var(--bs-body-font-family);
   font-size: 18px;
   margin: 0;
+  max-width: 1200px;
 }
 
 a:link,
@@ -19,5 +20,10 @@ a:visited {
 
 a:hover, #park-header a:visited {
   color: var(--bs-white);
+}
+details {
+  padding: 1rem;
+  border: 1px solid var(--bs-grey-3);
+  border-radius: 5px;
 }
 /* trying to push the code */
