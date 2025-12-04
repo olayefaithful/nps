@@ -7,6 +7,7 @@ import setHeaderFooter from "./setHeaderFooter.mjs";
 
 function setParkIntro(data) {
   const introEl = document.querySelector(".intro");
+  
   introEl.innerHTML = `
     <h1>${data.fullName}</h1>
     <p>${data.description}</p>`;
@@ -30,32 +31,31 @@ async function init() {
     setParkIntro(parkData);              
     setParkInfoLinks(links);          
   }
-function enableNavigation() {
-  const menuButton = document.querySelector("#global-nav-toggle");
-  const subMenuToggles = document.querySelectorAll(
-    ".global-nav__split-button__toggle"
-  );
+// function enableNavigation() {
+//   const menuButton = document.querySelector("#global-nav-toggle");
+//   const subMenuToggles = document.querySelectorAll(
+//     ".global-nav__split-button__toggle"
+//   );
   
-  menuButton.addEventListener("click", (ev) => {
-    let target = ev.target;
+//   menuButton.addEventListener("click", (ev) => {
+//     let target = ev.target;
     
-    document.querySelector(".global-nav").classList.toggle("show");
+//     document.querySelector(".global-nav").classList.toggle("show");
     
-    if (target.tagName != "BUTTON") {
-      target = target.closest("button");
-    }
+//     if (target.tagName != "BUTTON") {
+//       target = target.closest("button");
+//     }
     
-    if (document.querySelector(".global-nav").classList.contains("show")) {
+//     if (document.querySelector(".global-nav").classList.contains("show")) {
     
-      target.setAttribute("aria-expanded", true);
-    } else {
+//       target.setAttribute("aria-expanded", true);
+//     } else {
   
-      target.setAttribute("aria-expanded", false);
-    }
+//       target.setAttribute("aria-expanded", false);
+//     }
 
-    console.log("toggle");
-  });
-}
+//     console.log("toggle");
+//   });
+// }
 
 init();
-enableNavigation();

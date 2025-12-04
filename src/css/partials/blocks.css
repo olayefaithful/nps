@@ -31,14 +31,14 @@
   flex-direction: column;
   
 }
-/*@media screen and (min-width:650px) {
+@media screen and (min-width:750px) {
   
   .info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-}*/
+}
 .media-card:hover {
   transform: translateY(-5px);
 }
